@@ -1,4 +1,16 @@
----
+---int ledPin = 13;  // LED'in bağlı olduğu pin
+
+void setup() {
+  pinMode(ledPin, OUTPUT);  // LED pinini çıkış olarak ayarla
+}
+
+void loop() {
+  digitalWrite(ledPin, HIGH);   // LED'i aç
+  delay(1000);                   // 1 saniye bekle
+  digitalWrite(ledPin, LOW);    // LED'i kapat
+  delay(1000);                   // 1 saniye bekle
+}
+
 title: Wokwi Automation Scenarios
 sidebar_label: Automation Scenarios
 ---
